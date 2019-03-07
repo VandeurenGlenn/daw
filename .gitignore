@@ -74,3 +74,10 @@ typings/
 
 # FuseBox cache
 .fusebox/
+
+# App build
+/main.js
+chunk-*
+www/chunk-*
+www/syncing.js
+www/shell.js
