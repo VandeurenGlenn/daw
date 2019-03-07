@@ -34,6 +34,7 @@ const library = async () => {
 
   app.serveFolder(join(__dirname , 'www'));
 
+  await app.load('loading.html');
 
   app.on('exit', () => {
     process.exit()

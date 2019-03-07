@@ -19,7 +19,7 @@ export default [{
     cleanup()
   ]
 }, {
-  input: ['src/www/shell.js'],
+  input: ['src/www/shell.js', 'src/www/animations/syncing.js'],
   output: {
   	experimentalCodeSplitting: true,
     treeshake: true,
