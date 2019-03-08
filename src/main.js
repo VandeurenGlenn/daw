@@ -1,5 +1,4 @@
 import { launch } from 'carlo';
-import { homedir } from 'os';
 import { join } from 'path';
 import { promisify } from 'util';
 import { readdir as _readdir, mkdir as _mkdir, writeFile, readFile } from 'fs';
@@ -19,7 +18,7 @@ const setupLibrary = async () => {
 const library = async () => {
   const lib = await readdir(DEFAULT_LIBRARY);
   const userLib = await readdir(LIBRARY);
-  return [lib, userLib];
+  return [lib.map(name => [name, join(DEFAULT_LIBRARY, name)]), userLib.map(name => [name, join(LIBRARY, name)])];
 }
 
 (async () => {

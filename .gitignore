@@ -81,3 +81,4 @@ chunk-*
 www/chunk-*
 www/syncing.js
 www/shell.js
+www/file-browser.js
