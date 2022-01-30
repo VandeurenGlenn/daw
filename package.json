@@ -12,7 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "backed": "^0.13.0",
-    "carlo": "^0.9.43",
+    "carlo": "^0.9.46",
     "custom-renderer-mixin": "^1.1.2"
   },
   "devDependencies": {
